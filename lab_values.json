@@ -1,0 +1,1353 @@
+{
+    "Electrolytes": [
+        {
+            "test": "Ammonia",
+            "ranges": [
+                {
+                    "low": 10.0,
+                    "high": 80.0,
+                    "unit": "mcg/dL"
+                },
+                {
+                    "low": 6.0,
+                    "high": 47.0,
+                    "unit": "umol/L"
+                }
+            ]
+        },
+        {
+            "test": "Ceruloplasmin",
+            "ranges": [
+                {
+                    "low": 23.0,
+                    "high": 50.0,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 230.0,
+                    "high": 500.0,
+                    "unit": "mg/L"
+                }
+            ]
+        },
+        {
+            "test": "Chloride",
+            "ranges": [
+                {
+                    "low": 98.0,
+                    "high": 106.0,
+                    "unit": "mEq/L"
+                },
+                {
+                    "low": 98.0,
+                    "high": 106.0,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Copper",
+            "ranges": [
+                {
+                    "low": 100.0,
+                    "high": 200.0,
+                    "unit": "ug/dL, in urine: 0-100 ug/24 h"
+                }
+            ]
+        },
+        {
+            "test": "Creatinine",
+            "ranges": [
+                {
+                    "low": 0.8,
+                    "high": 1.3,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 0.6,
+                    "high": 1.2,
+                    "unit": "mg/dL",
+                    "sex": "male"
+                },
+                {
+                    "low": 53.0,
+                    "high": 106.0,
+                    "unit": "umol/L",
+                    "sex": "male"
+                },
+                {
+                    "low": 0.5,
+                    "high": 1.1,
+                    "unit": "mg/dL",
+                    "sex": "female"
+                },
+                {
+                    "low": 44.0,
+                    "high": 97.0,
+                    "unit": "umol/L",
+                    "sex": "female"
+                }
+            ]
+        },
+        {
+            "test": "Blood urea nitrogen",
+            "ranges": [
+                {
+                    "low": 10.0,
+                    "high": 20.0,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 3.6,
+                    "high": 7.1,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Ferritin",
+            "ranges": [
+                {
+                    "low": 10.0,
+                    "high": 150.0,
+                    "unit": "ng/mL",
+                    "sex": "female"
+                },
+                {
+                    "low": 10.0,
+                    "high": 150.0,
+                    "unit": "mcg/L",
+                    "sex": "female"
+                },
+                {
+                    "low": 12.0,
+                    "high": 300.0,
+                    "unit": "ng/mL",
+                    "sex": "male"
+                },
+                {
+                    "low": 12.0,
+                    "high": 300.0,
+                    "unit": "mcg/L",
+                    "sex": "male"
+                }
+            ]
+        },
+        {
+            "test": "Glucose",
+            "ranges": [
+                {
+                    "low": 74.0,
+                    "high": 106.0,
+                    "unit": "mg/dL"
+                }
+            ]
+        },
+        {
+            "test": "Inorganic phosphorous",
+            "ranges": [
+                {
+                    "low": 3.0,
+                    "high": 4.5,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 0.97,
+                    "high": 1.45,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Ionized calcium",
+            "ranges": [
+                {
+                    "low": 4.5,
+                    "high": 5.6,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 1.05,
+                    "high": 1.3,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Magnesium",
+            "ranges": [
+                {
+                    "low": 1.3,
+                    "high": 2.1,
+                    "unit": "mEq/L"
+                },
+                {
+                    "low": 0.65,
+                    "high": 1.05,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Phosphate",
+            "ranges": [
+                {
+                    "low": 3.0,
+                    "high": 4.5,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 0.97,
+                    "high": 1.45,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Potassium",
+            "ranges": [
+                {
+                    "low": 3.5,
+                    "high": 5.0,
+                    "unit": "mEq/L"
+                },
+                {
+                    "low": 3.5,
+                    "high": 5.0,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Pyruvate",
+            "ranges": [
+                {
+                    "low": 0.08,
+                    "high": 0.16,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Sodium",
+            "ranges": [
+                {
+                    "low": 136.0,
+                    "high": 145.0,
+                    "unit": "mEq/L"
+                },
+                {
+                    "low": 136.0,
+                    "high": 145.0,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Total calcium",
+            "ranges": [
+                {
+                    "low": 2.0,
+                    "high": 2.6,
+                    "unit": "mmol/L"
+                },
+                {
+                    "low": 9.0,
+                    "high": 10.5,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 2.25,
+                    "high": 2.62,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Total iron-binding capacity",
+            "ranges": [
+                {
+                    "low": 250.0,
+                    "high": 310.0,
+                    "unit": "ug/dL"
+                }
+            ]
+        },
+        {
+            "test": "Total serum iron",
+            "ranges": [
+                {
+                    "low": 50.0,
+                    "high": 150.0,
+                    "unit": "ug/dL"
+                }
+            ]
+        },
+        {
+            "test": "Transferrin",
+            "ranges": [
+                {
+                    "low": 215.0,
+                    "high": 365.0,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 2.15,
+                    "high": 3.65,
+                    "unit": "g/L"
+                }
+            ]
+        },
+        {
+            "test": "Urea",
+            "ranges": [
+                {
+                    "low": 1.2,
+                    "high": 3.0,
+                    "unit": "mmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Uric acid",
+            "ranges": [
+                {
+                    "low": 0.24,
+                    "high": 0.51,
+                    "unit": "mmol/L"
+                },
+                {
+                    "low": 2.7,
+                    "high": 7.3,
+                    "unit": "mg/dL",
+                    "sex": "female"
+                },
+                {
+                    "low": 0.16,
+                    "high": 0.43,
+                    "unit": "mmol/L",
+                    "sex": "female"
+                },
+                {
+                    "low": 1.48,
+                    "high": 4.43,
+                    "unit": "mmol/day",
+                    "sex": "female"
+                }
+            ]
+        },
+        {
+            "test": "Zinc",
+            "ranges": [
+                {
+                    "low": 75.0,
+                    "high": 140.0,
+                    "unit": "ug/dL"
+                }
+            ]
+        }
+    ],
+    "Hematology": [
+        {
+            "test": "Hemoglobin",
+            "ranges": [
+                {
+                    "low": 12.0,
+                    "high": 16.0,
+                    "unit": "g/dL",
+                    "sex": "female"
+                },
+                {
+                    "low": 7.4,
+                    "high": 9.9,
+                    "unit": "mmol/L",
+                    "sex": "female"
+                },
+                {
+                    "low": 14.0,
+                    "high": 18.0,
+                    "unit": "g/dL",
+                    "sex": "male"
+                },
+                {
+                    "low": 8.7,
+                    "high": 11.2,
+                    "unit": "mmol/L",
+                    "sex": "male"
+                }
+            ]
+        },
+        {
+            "test": "Hematocrit",
+            "ranges": [
+                {
+                    "low": 37.0,
+                    "high": 47.0,
+                    "unit": "%",
+                    "sex": "female"
+                },
+                {
+                    "low": 42.0,
+                    "high": 50.0,
+                    "unit": "%",
+                    "sex": "male"
+                }
+            ]
+        },
+        {
+            "test": "Glycosylated hemoglobin",
+            "ranges": [
+                {
+                    "low": 4.0,
+                    "high": 5.9,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "Mean corpuscular volume",
+            "ranges": [
+                {
+                    "low": 80.0,
+                    "high": 95.0,
+                    "unit": "fL"
+                }
+            ]
+        },
+        {
+            "test": "Red blood cell distribution width",
+            "ranges": [
+                {
+                    "low": 11.0,
+                    "high": 14.5,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "Mean corpuscular hemoglobin",
+            "ranges": [
+                {
+                    "low": 27.0,
+                    "high": 31.0,
+                    "unit": "pg"
+                }
+            ]
+        },
+        {
+            "test": "Mean corpuscular hemoglobin concentration",
+            "ranges": [
+                {
+                    "low": 32.0,
+                    "high": 36.0,
+                    "unit": "g/dL"
+                },
+                {
+                    "low": 32.0,
+                    "high": 36.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "Reticulocytes",
+            "ranges": [
+                {
+                    "low": 0.5,
+                    "high": 2.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "White blood cells",
+            "ranges": [
+                {
+                    "low": 5000.0,
+                    "high": 10000.0,
+                    "unit": "/mm 3"
+                },
+                {
+                    "low": 5.0,
+                    "high": 10.0,
+                    "unit": "x 10 9 /L"
+                }
+            ]
+        },
+        {
+            "test": "Neutrophils",
+            "ranges": [
+                {
+                    "low": 2500.0,
+                    "high": 8000.0,
+                    "unit": "/mm 3"
+                },
+                {
+                    "low": 55.0,
+                    "high": 70.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "Bands",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 1.0,
+                    "unit": "x 10 9 /L",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "Lymphocytes",
+            "ranges": [
+                {
+                    "low": 1000.0,
+                    "high": 4000.0,
+                    "unit": "/mm 3"
+                },
+                {
+                    "low": 20.0,
+                    "high": 40.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "Monocytes",
+            "ranges": [
+                {
+                    "low": 100.0,
+                    "high": 700.0,
+                    "unit": "/mm 3"
+                },
+                {
+                    "low": 2.0,
+                    "high": 8.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "Eosinophils",
+            "ranges": [
+                {
+                    "low": 50.0,
+                    "high": 500.0,
+                    "unit": "/mm 3"
+                },
+                {
+                    "low": 1.0,
+                    "high": 4.0,
+                    "unit": "%"
+                }
+            ]
+        },
+        {
+            "test": "Platelets",
+            "ranges": [
+                {
+                    "low": 150000.0,
+                    "high": 400000.0,
+                    "unit": "/mm 3"
+                },
+                {
+                    "low": 150.0,
+                    "high": 400.0,
+                    "unit": "x 10 9 /L"
+                }
+            ]
+        },
+        {
+            "test": "Prothrombin time",
+            "ranges": [
+                {
+                    "low": 11.0,
+                    "high": 12.5,
+                    "unit": "s"
+                }
+            ]
+        },
+        {
+            "test": "International normalized ratio",
+            "ranges": [
+                {
+                    "low": 0.8,
+                    "high": 1.1,
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "test": "Activated partial thromboplastin time",
+            "ranges": [
+                {
+                    "low": 30.0,
+                    "high": 40.0,
+                    "unit": "s"
+                }
+            ]
+        },
+        {
+            "test": "Fibrinogen",
+            "ranges": [
+                {
+                    "low": 200.0,
+                    "high": 400.0,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 2.0,
+                    "high": 4.0,
+                    "unit": "g/L"
+                }
+            ]
+        },
+        {
+            "test": "Bleeding time",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 9.0,
+                    "unit": "min",
+                    "sex": null
+                }
+            ]
+        }
+    ],
+    "Lipids": [
+        {
+            "test": "Triglycerides",
+            "ranges": [
+                {
+                    "low": 40.0,
+                    "high": 160.0,
+                    "unit": "mg/dL",
+                    "sex": "male"
+                },
+                {
+                    "low": 0.45,
+                    "high": 1.81,
+                    "unit": "mmol/L",
+                    "sex": "male"
+                },
+                {
+                    "low": 35.0,
+                    "high": 135.0,
+                    "unit": "mg/dL",
+                    "sex": "female"
+                },
+                {
+                    "low": 0.4,
+                    "high": 1.52,
+                    "unit": "mmol/L",
+                    "sex": "female"
+                }
+            ]
+        },
+        {
+            "test": "Total cholesterol",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 200.0,
+                    "unit": "mg/dL",
+                    "sex": null
+                },
+                {
+                    "low": null,
+                    "high": 5.2,
+                    "unit": "mmol/L",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "High-density lipoprotein",
+            "ranges": [
+                {
+                    "low": 55.0,
+                    "high": null,
+                    "unit": "mg/dL",
+                    "sex": "female"
+                },
+                {
+                    "low": 0.91,
+                    "high": null,
+                    "unit": "mmol/L",
+                    "sex": "female"
+                },
+                {
+                    "low": 45.0,
+                    "high": null,
+                    "unit": "mg/dL",
+                    "sex": "male"
+                },
+                {
+                    "low": 0.75,
+                    "high": null,
+                    "unit": "mmol/L",
+                    "sex": "male"
+                }
+            ]
+        },
+        {
+            "test": "Low-density lipoprotein",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 130.0,
+                    "unit": "mg/dL",
+                    "sex": null
+                }
+            ]
+        }
+    ],
+    "Acid base": [
+        {
+            "test": "pH",
+            "ranges": [
+                {
+                    "low": 7.35,
+                    "high": 7.45,
+                    "unit": ""
+                }
+            ]
+        },
+        {
+            "test": "H+",
+            "ranges": [
+                {
+                    "low": 36.0,
+                    "high": 44.0,
+                    "unit": "nmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Partial pressure of oxygen (pO2)",
+            "ranges": [
+                {
+                    "low": 80.0,
+                    "high": 100.0,
+                    "unit": "mm Hg"
+                }
+            ]
+        },
+        {
+            "test": "Oxygen saturation",
+            "ranges": [
+                {
+                    "low": 95.0,
+                    "high": null,
+                    "unit": "%",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "Partial pressure of carbon dioxide (pCO2)",
+            "ranges": [
+                {
+                    "low": 35.0,
+                    "high": 45.0,
+                    "unit": "mm Hg"
+                }
+            ]
+        },
+        {
+            "test": "Bicarbonate(HCO3)",
+            "ranges": [
+                {
+                    "low": 21.0,
+                    "high": 28.0,
+                    "unit": "mEq/L"
+                }
+            ]
+        }
+    ],
+    "Gastrointestinal function": [
+        {
+            "test": "Albumin",
+            "ranges": [
+                {
+                    "low": 3.5,
+                    "high": 5.5,
+                    "unit": "g/dL"
+                }
+            ]
+        },
+        {
+            "test": "Alkaline phosphatase",
+            "ranges": [
+                {
+                    "low": 30.0,
+                    "high": 120.0,
+                    "unit": "U/L"
+                }
+            ]
+        },
+        {
+            "test": "Alanine aminotransferase",
+            "ranges": [
+                {
+                    "low": 4.0,
+                    "high": 36.0,
+                    "unit": "U/L"
+                }
+            ]
+        },
+        {
+            "test": "Amylase",
+            "ranges": [
+                {
+                    "low": 60.0,
+                    "high": 120.0,
+                    "unit": "Somogyi units/dL"
+                },
+                {
+                    "low": 30.0,
+                    "high": 220.0,
+                    "unit": "units/L"
+                }
+            ]
+        },
+        {
+            "test": "Aspartate aminotransferase",
+            "ranges": [
+                {
+                    "low": 0.0,
+                    "high": 35.0,
+                    "unit": "U/L"
+                }
+            ]
+        },
+        {
+            "test": "Direct bilirubin",
+            "ranges": [
+                {
+                    "low": 0.1,
+                    "high": 0.3,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 1.7,
+                    "high": 5.1,
+                    "unit": "umol/L"
+                }
+            ]
+        },
+        {
+            "test": "γ glutamyl transferase",
+            "ranges": [
+                {
+                    "low": 8.0,
+                    "high": 38.0,
+                    "unit": "international units/L",
+                    "sex": "male"
+                },
+                {
+                    "low": 5.0,
+                    "high": 27.0,
+                    "unit": "international units/L",
+                    "sex": "male"
+                }
+            ]
+        },
+        {
+            "test": "Lipase",
+            "ranges": [
+                {
+                    "low": 0.0,
+                    "high": 160.0,
+                    "unit": "units/L"
+                }
+            ]
+        },
+        {
+            "test": "Total bilirubin",
+            "ranges": [
+                {
+                    "low": 0.3,
+                    "high": 1.0,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 5.1,
+                    "high": 17.0,
+                    "unit": "umol/L"
+                }
+            ]
+        },
+        {
+            "test": "Total protein",
+            "ranges": [
+                {
+                    "low": 6.4,
+                    "high": 8.3,
+                    "unit": "g/dL"
+                }
+            ]
+        }
+    ],
+    "Cardiac enzymes": [
+        {
+            "test": "Creatine kinase",
+            "ranges": [
+                {
+                    "low": 20.0,
+                    "high": 200.0,
+                    "unit": "U/L"
+                }
+            ]
+        },
+        {
+            "test": "Creatine kinase MB (CKMB)",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 5.0,
+                    "unit": "% of total CK levels",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "Cardiac Troponin",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 14.0,
+                    "unit": "ng/L",
+                    "sex": "female"
+                }
+            ]
+        },
+        {
+            "test": "Cardiac troponin I",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 0.03,
+                    "unit": "ng/mL",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "hsTnT",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 22.0,
+                    "unit": "ng/L",
+                    "sex": "male"
+                },
+                {
+                    "low": null,
+                    "high": 14.0,
+                    "unit": "ng/L",
+                    "sex": "female"
+                }
+            ]
+        }
+    ],
+    "Hormones": [
+        {
+            "test": "17-hydroxyprogesterone (female, follicular)",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 80.0,
+                    "unit": "ng/dL",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "Adrenocorticotropic hormone",
+            "ranges": []
+        },
+        {
+            "test": "Estradiol",
+            "ranges": []
+        },
+        {
+            "test": "Free T3",
+            "ranges": [
+                {
+                    "low": 2.3,
+                    "high": 4.2,
+                    "unit": "pg/mL"
+                }
+            ]
+        },
+        {
+            "test": "Free T4",
+            "ranges": [
+                {
+                    "low": 0.8,
+                    "high": 1.8,
+                    "unit": "ng/dL"
+                }
+            ]
+        },
+        {
+            "test": "Follicle-stimulating hormone",
+            "ranges": [
+                {
+                    "low": 1.42,
+                    "high": 15.4,
+                    "unit": "IU/L",
+                    "sex": "male"
+                }
+            ]
+        },
+        {
+            "test": "Growth hormone (fasting)",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 5.0,
+                    "unit": "ng/mL",
+                    "sex": "male"
+                },
+                {
+                    "low": null,
+                    "high": 10.0,
+                    "unit": "ng/mL",
+                    "sex": "female"
+                }
+            ]
+        },
+        {
+            "test": "Progesterone",
+            "ranges": []
+        },
+        {
+            "test": "Prolactin",
+            "ranges": []
+        },
+        {
+            "test": "Testosterone",
+            "ranges": [
+                {
+                    "low": 18.0,
+                    "high": 54.0,
+                    "unit": "ng/dL",
+                    "sex": "female"
+                }
+            ]
+        },
+        {
+            "test": "Thyroxine-binding globulin",
+            "ranges": [
+                {
+                    "low": 12.0,
+                    "high": 27.0,
+                    "unit": "ug/mL"
+                }
+            ]
+        },
+        {
+            "test": "Thyroid-stimulating hormone",
+            "ranges": [
+                {
+                    "low": 0.5,
+                    "high": 4.0,
+                    "unit": "uU/mL"
+                },
+                {
+                    "low": 0.5,
+                    "high": 4.0,
+                    "unit": "mU/L"
+                }
+            ]
+        },
+        {
+            "test": "Total T4",
+            "ranges": [
+                {
+                    "low": 59.0,
+                    "high": 135.0,
+                    "unit": "nmol/L"
+                },
+                {
+                    "low": 71.0,
+                    "high": 142.0,
+                    "unit": "nmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Total T3",
+            "ranges": [
+                {
+                    "low": 80.0,
+                    "high": 180.0,
+                    "unit": "ng/dL"
+                }
+            ]
+        }
+    ],
+    "Vitamins": [
+        {
+            "test": "Folate (serum)",
+            "ranges": [
+                {
+                    "low": 5.0,
+                    "high": 25.0,
+                    "unit": "ng/mL"
+                },
+                {
+                    "low": 11.0,
+                    "high": 57.0,
+                    "unit": "nmol/L"
+                }
+            ]
+        },
+        {
+            "test": "Vitamin A",
+            "ranges": [
+                {
+                    "low": 32.5,
+                    "high": 78.0,
+                    "unit": "ug/dL"
+                }
+            ]
+        },
+        {
+            "test": "Vitamin B12",
+            "ranges": [
+                {
+                    "low": 200.0,
+                    "high": 800.0,
+                    "unit": "pg/mL"
+                }
+            ]
+        },
+        {
+            "test": "Vitamin C",
+            "ranges": [
+                {
+                    "low": 0.4,
+                    "high": 1.5,
+                    "unit": "mg/dL"
+                }
+            ]
+        },
+        {
+            "test": "Vitamin D",
+            "ranges": []
+        },
+        {
+            "test": "Vitamin E",
+            "ranges": []
+        },
+        {
+            "test": "Serum",
+            "ranges": [
+                {
+                    "low": 5.0,
+                    "high": 20.0,
+                    "unit": "mcg/mL"
+                },
+                {
+                    "low": 11.6,
+                    "high": 46.4,
+                    "unit": "umol/L"
+                }
+            ]
+        },
+        {
+            "test": "Plasma",
+            "ranges": [
+                {
+                    "low": 5.7,
+                    "high": 19.9,
+                    "unit": "mg/L"
+                },
+                {
+                    "low": 11.4,
+                    "high": 39.8,
+                    "unit": "umol/L"
+                }
+            ]
+        },
+        {
+            "test": "Vitamin K",
+            "ranges": [
+                {
+                    "low": 0.2,
+                    "high": 1.0,
+                    "unit": "ng/ml"
+                }
+            ]
+        }
+    ],
+    "Tumor markers": [
+        {
+            "test": "α fetoprotein",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 40.0,
+                    "unit": "mcg/L",
+                    "sex": null
+                },
+                {
+                    "low": null,
+                    "high": 1.4,
+                    "unit": "U/L",
+                    "sex": "male"
+                }
+            ]
+        },
+        {
+            "test": "CA19.9",
+            "ranges": [
+                {
+                    "low": 0.0,
+                    "high": 37.0,
+                    "unit": "U/mL"
+                }
+            ]
+        },
+        {
+            "test": "Carcinoembryonic antigen",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 2.5,
+                    "unit": "ng/mL",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "Prostatic acid phosphatase",
+            "ranges": [
+                {
+                    "low": 0.0,
+                    "high": 3.0,
+                    "unit": "U/dL"
+                }
+            ]
+        },
+        {
+            "test": "Prostate-specific antigen",
+            "ranges": [
+                {
+                    "low": 0.0,
+                    "high": 2.5,
+                    "unit": "ng/mL"
+                }
+            ]
+        }
+    ],
+    "Miscellaneous": [
+        {
+            "test": "α 1-antitrypsin",
+            "ranges": [
+                {
+                    "low": 85.0,
+                    "high": 213.0,
+                    "unit": "mg/dL"
+                },
+                {
+                    "low": 0.85,
+                    "high": 2.13,
+                    "unit": "g/L"
+                }
+            ]
+        },
+        {
+            "test": "Angiotensin-converting enzyme",
+            "ranges": [
+                {
+                    "low": 8.0,
+                    "high": 53.0,
+                    "unit": "U/L"
+                }
+            ]
+        },
+        {
+            "test": "C-reactive protein",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 10.0,
+                    "unit": "mg/L",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "D-dimer",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 0.5,
+                    "unit": "mg/L Fibrinogen Equivalent Units",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "Erythrocyte sedimentation rate",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 15.0,
+                    "unit": "mm/h",
+                    "sex": "male"
+                },
+                {
+                    "low": null,
+                    "high": 20.0,
+                    "unit": "mm/h",
+                    "sex": "female"
+                }
+            ]
+        },
+        {
+            "test": "Lactate dehydrogenase",
+            "ranges": [
+                {
+                    "low": 100.0,
+                    "high": 190.0,
+                    "unit": "units/L at 37° C"
+                },
+                {
+                    "low": 100.0,
+                    "high": 190.0,
+                    "unit": "units/L"
+                }
+            ]
+        },
+        {
+            "test": "Lead",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 10.0,
+                    "unit": "ug/dL",
+                    "sex": null
+                }
+            ]
+        },
+        {
+            "test": "Rheumatoid factor",
+            "ranges": [
+                {
+                    "low": null,
+                    "high": 60.0,
+                    "unit": "units/mL by nephelometric testing",
+                    "sex": null
+                }
+            ]
+        }
+    ]
+}
