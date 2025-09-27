@@ -1,5 +1,6 @@
 import { openai } from "../utils/aiClients.js";
 import { extractJSON } from "../utils/helpers.js";
+import { getTextFromImage } from "./ocrProcessor.js";
 
 /**
  * Step 1 (cont.): Parse and correct raw text using the Gemini API to make it more generic.
@@ -79,3 +80,28 @@ export async function parseAndCorrectText(rawText) {
         throw new Error("Failed to parse and correct raw text.");
     }
   };
+
+export async function parseDriver(req){
+    let rawText = '';
+    // Destructure sex from the request body for use in normalization
+    const { text, sex } = req.body;
+
+    // Check if text or image is provided
+    if (text) {
+        rawText = text;
+    } else if (req.file) {
+        rawText = await getTextFromImage(req.file.buffer, req.file.mimetype);
+        console.log("Extracted OCR Text:", rawText);
+    } else {
+        return res.status(400).json({ error: 'Please provide either text or an image file.' });
+    }
+
+    // Step 1: Parse and correct raw text using the new AI-powered function
+    const result = await parseAndCorrectText(rawText);
+    const tests_raw = result.tests_raw
+    if (tests_raw.length === 0) {
+        return res.status(400).json({ status: "unprocessed", reason: "No valid test results could be extracted from the input." });
+    }
+
+    return result;
+}

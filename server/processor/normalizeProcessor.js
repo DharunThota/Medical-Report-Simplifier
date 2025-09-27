@@ -1,6 +1,7 @@
 import { findTestReference } from "../database/db.js";
 import { unitConversion, nameMap } from "../constants/mapping.js";
 import { calculateTestConfidence } from "../utils/helpers.js";
+import { parseDriver } from "./parseProcessor.js";
 
 /**
  * Step 2: Normalize the extracted raw tests against the MongoDB database.
@@ -15,7 +16,7 @@ export async function normalizeTests(rawTests, sex = 'female') {
 
     // Use a for...of loop to correctly handle await inside the loop
     for (const testStr of rawTests) {
-        const match = testStr.match(/([a-zA-Z\s]+) ([\d.]+) ([a-zA-Z\/\d\^]+)(?: \((Low|High|Normal)\))?/i);
+        const match = testStr.match(/([a-zA-Z\s]+) ([\d.]+) ([a-zA-Z\/\d\^\%\s]+)(?: \((Low|High|Normal)\))?/i);
         if (match) {
             console.log("Regex Match:", match);
             const [, rawName, valueStr, rawUnit, status] = match;
@@ -30,8 +31,15 @@ export async function normalizeTests(rawTests, sex = 'female') {
                 unit = unitConversion[unit].to;
             }
             
-            if (nameMap[name]) {
-                name = nameMap[name];
+            // if (nameMap[name]) {
+            //     name = nameMap[name];
+            // }
+            for (const key in nameMap) {
+                const regex = new RegExp(`\\b${key}\\b`, 'i'); // word-boundary match
+                if (regex.test(name)) {
+                    name = nameMap[key];
+                    break; // stop after first match
+                }
             }
             console.log(`Converted Test: ${name}, Value: ${value}, Unit: ${unit}`);
             
@@ -65,4 +73,24 @@ export async function normalizeTests(rawTests, sex = 'female') {
         tests: tests,
         normalization_confidence: confidence // Static confidence
     };
+}
+
+export async function normalizeDriver(req) {
+    const parseResults = await parseDriver(req);
+    if (parseResults.status === 'unprocessed') {
+        return parseResults;
+    }
+
+    const tests_raw = parseResults.tests_raw;
+    const sex = req.body.sex;
+
+    // Step 2: Normalize tests (now an async DB operation)
+    const result = await normalizeTests(tests_raw, sex);
+    const normalizedTests = result.tests;
+        if (normalizedTests.length === 0) {
+        return res.status(400).json({ status: "unprocessed", reason: "Could not normalize any of the extracted tests." });
+    }
+    console.log("Normalized Tests:", result)
+
+    return result
 }

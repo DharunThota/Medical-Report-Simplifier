@@ -1,6 +1,7 @@
 import { openai } from "../utils/aiClients.js";
 import { extractJSON } from "../utils/helpers.js";
 import { nameMap } from "../constants/mapping.js";
+import { normalizeDriver } from "./normalizeProcessor.js";
 
 /**
  * Step 3: Generate a patient-friendly summary using the Gemini API.
@@ -69,4 +70,43 @@ export async function getPatientSummary(normalizedTests) {
     console.error("Error calling Gemini API for summary:", error);
     throw new Error("Failed to generate patient summary.");
   }
+}
+
+export async function summaryDriver(req) {
+    const normalizeResult = await normalizeDriver(req);
+    if (normalizeResult.status === 'unprocessed') {
+        return normalizeResult;
+    }
+    
+    const normalizedTests = normalizeResult.tests;
+    // Step 3: Get patient-friendly summary
+    const summaryData = await getPatientSummary(normalizedTests);
+    console.log("Summary Data:", summaryData);
+    
+    // Check guardrail exit condition
+    if (summaryData.status === 'unprocessed') {
+        return res.status(500).json(summaryData);
+    }
+
+    return { summaryData, normalizedTests };
+}
+
+export async function simplifyMedicalReport(req) {
+    const summaryResult = await summaryDriver(req);
+    if (summaryResult.status === 'unprocessed') {
+        return summaryResult;
+    }
+
+    const normalizedTests = summaryResult.normalizedTests;
+    const summaryData = summaryResult.summaryData;
+
+    // Step 4: Final Output
+    const finalOutput = {
+      tests: normalizedTests,
+      summary: summaryData.summary,
+      status: "ok"
+    };
+
+    // res.json(finalOutput);
+    return finalOutput;
 }
