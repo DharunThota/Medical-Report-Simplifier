@@ -14,6 +14,7 @@ export async function normalizeTests(rawTests, sex = 'female') {
     const tests = [];
     let confidence = 0;
 
+    console.log("Raw Tests for Normalization:", rawTests);
     // Use a for...of loop to correctly handle await inside the loop
     for (const testStr of rawTests) {
         const match = testStr.match(/([a-zA-Z\s]+) ([\d.]+) ([a-zA-Z\/\d\^\%\s]+)(?: \((Low|High|Normal)\))?/i);
@@ -82,7 +83,7 @@ export async function normalizeDriver(req) {
     }
 
     const tests_raw = parseResults.tests_raw;
-    const sex = req.body.sex;
+    const sex = req.body ? req.body.sex : 'female';
 
     // Step 2: Normalize tests (now an async DB operation)
     const result = await normalizeTests(tests_raw, sex);

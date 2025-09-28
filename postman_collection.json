@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "ca304c56-99b6-413b-953e-298589c36683",
+		"name": "Medical Report Simplifier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31751705"
+	},
+	"item": [
+		{
+			"name": "Tests",
+			"item": [
+				{
+					"name": "Test - Gender Specific",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "Hemoglobin 13.5 g/dL",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test - Clean Text",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "CBC: Hemoglobin 10.2 g/dL (Low), WBC 11200 /uL (High)",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test - Mixed and Messy Text",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "Hemglobn: 14.5 g/dL,\nWBC   5200 /uL\nAmonnia 90 mcg/dL (High)",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test - Image Screenshot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "reportImage",
+									"type": "file",
+									"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test 2.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test - Handwritten Clean Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "reportImage",
+									"type": "file",
+									"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test 1.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test - Handwritten Noisy Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "reportImage",
+									"type": "file",
+									"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test5.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test - Medical Report Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "reportImage",
+									"type": "file",
+									"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test5.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test - Noisy Medical Report Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sex",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "reportImage",
+									"type": "file",
+									"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test5.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+							"protocol": "http",
+							"host": [
+								"74",
+								"225",
+								"185",
+								"74"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"simplify-report"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Various tests for the Medical Report Simplifier API"
+		},
+		{
+			"name": "Step 1: OCR/Text Extraction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Patient Name: John Doe. Report Date: 2023-10-27.\nThe results are as follows: WBC 15000 /uL (High). Patient should follow up.\nEnd of Report.\n\n\n",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "male",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reportImage",
+							"type": "file",
+							"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test 7.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://74.225.185.74:3000/api/v1/extract-text",
+					"protocol": "http",
+					"host": [
+						"74",
+						"225",
+						"185",
+						"74"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"extract-text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 2: Normalized Tests JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Patient Name: John Doe. Report Date: 2023-10-27.\nThe results are as follows: WBC 15000 /uL (High). Patient should follow up.\nEnd of Report.\n\n\n",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "male",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reportImage",
+							"type": "file",
+							"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test 7.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://74.225.185.74:3000/api/v1/normalize-tests",
+					"protocol": "http",
+					"host": [
+						"74",
+						"225",
+						"185",
+						"74"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"normalize-tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 3: Patient-Friendly Summary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Patient Name: John Doe. Report Date: 2023-10-27.\nThe results are as follows: WBC 15000 /uL (High). Patient should follow up.\nEnd of Report.\n\n\n",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "male",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reportImage",
+							"type": "file",
+							"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test 7.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://74.225.185.74:3000/api/v1/simple-summary",
+					"protocol": "http",
+					"host": [
+						"74",
+						"225",
+						"185",
+						"74"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"simple-summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simplify Report - End to End",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Hemoglobin 10.2 g/dL Low, WBC 11200 /uL High",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "male",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reportImage",
+							"type": "file",
+							"src": "/C:/Users/dharu/Desktop/Plum Benefits/Medical Report Simplifier/tests/test 7.webp"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://74.225.185.74:3000/api/v1/simplify-report",
+					"protocol": "http",
+					"host": [
+						"74",
+						"225",
+						"185",
+						"74"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"simplify-report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
