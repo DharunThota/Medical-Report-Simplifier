@@ -111,7 +111,6 @@ Before you begin, ensure you have the following:
 * **MongoDB:** A running MongoDB instance (local or remote)
 * **API Keys:**
   - Mistral AI API key
-  - OCR.space API key
 
 ## Installation & Setup
 
@@ -130,7 +129,7 @@ cp .env.template .env
 Edit the `.env` file with your credentials:
 ```env
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/medical_reports
+MONGODB_URI=mongodb://localhost:27017/
 MONGODB_DB_NAME=report_simplifier
 MONGODB_COLLECTION_NAME=reference_ranges
 MISTRAL_API_KEY=your_mistral_api_key_here
@@ -233,7 +232,7 @@ http://74.225.185.74:3000
       }
     }
   ],
-  "status": "ok"
+   "normalization_confidence": 0.84
 }
 ```
 
@@ -257,8 +256,7 @@ http://74.225.185.74:3000
       "Hemoglobin carries oxygen in your blood. A low level might indicate anemia.",
       "White blood cells help fight infections. A high count might indicate your body is fighting an infection."
     ]
-  },
-  "normalizedTests": [...] // Same structure as normalize-tests
+  }
 }
 ```
 
@@ -356,11 +354,10 @@ The service uses a MongoDB collection with reference ranges structured as follow
   "name": "Hemoglobin",           // Standardized test name
   "unit": "g/dL",                 // Standard unit for this test
   "category": "Complete Blood Count",
-  "ref_range": {
-    "male": { "low": 13.5, "high": 17.5 },
-    "female": { "low": 12.0, "high": 15.5 },
-    "general": { "low": 12.0, "high": 17.5 }  // Fallback range
-  }
+  "ref_range": [
+    { "low": 13.5, "high": 17.5, sex: "male" },
+    { "low": 12.0, "high": 15.5 , sex: "female" },
+  ]
 }
 ```
 
